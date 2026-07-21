@@ -37,4 +37,17 @@ The following queries were used during the investigation:
 - Timeline Analysis
 - Security Event Correlation
 
+  ## Process_Creation.spl
+  - index=* sourcetype="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1
+| table _time User Image ParentImage CommandLine
+
+## Command.exe.spl
+- index=* sourcetype="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 Image="*cmd.exe"
+| table _time User Image ParentImage CommandLine
+| sort -_time
+
+## Parent_Child_Process.spl
+- index=* sourcetype="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1
+| table _time ParentImage Image CommandLine
+
  
