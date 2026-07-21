@@ -56,7 +56,6 @@ SOC Investigation
 ├── SPL Queries
 ├── Event Correlation
 ├── IOC Analysis
-├── Attack Timeline
 ├── MITRE ATT&CK Mapping
 └── Incident Report
 ```
@@ -73,9 +72,8 @@ SOC Investigation
 6. Analyze events using SPL queries.
 7. Correlate security events.
 8. Identify Indicators of Compromise (IOCs).
-9. Reconstruct the attack timeline.
-10. Map techniques to the MITRE ATT&CK framework.
-11. Document findings and recommendations.
+9. Map techniques to the MITRE ATT&CK framework.
+10. Document findings and recommendations.
 
 ---
 
@@ -119,11 +117,9 @@ SOC-Incident-Investigation-with-Splunk/
 ├── 02-Attack-Scenario/
 ├── 03-SPL-Queries/
 ├── 04-Evidence/
-├── 05-Attack-Timeline/
-├── 06-Indicators-of-Compromise/
-├── 07-MITRE-ATTACK/
-├── 08-Incident-Report/
-└── Screenshots/
+├── 05-Indicators-of-Compromise/
+├── 06-MITRE-ATTACK/
+├── 07-Incident-Report/
 ```
 
 ---
